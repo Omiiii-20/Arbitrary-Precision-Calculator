@@ -91,10 +91,9 @@ Result: 20
 
 ## 📸 Output Screenshot
 
-![Addition](screenshots/addition.png)
-![Subtraction](screenshots/subtraction.png)
-![Multiplication](screenshots/multiplication.png)
-![Division](screenshots/division.png)
+The following screenshot demonstrates all arithmetic operations:
+
+![APC Output](Screenshot/apc-output.png)
 
 ---
 
