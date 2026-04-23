@@ -1,28 +1,28 @@
-APC – Arbitrary Precision Calculator
-Author: Om Bidikar
-Batch: 25017_172
-Date: 14 Nov 2025
-About the Project
+# APC – Arbitrary Precision Calculator
 
-This project implements a Big Integer Calculator that performs arithmetic operations on very large integers (numbers bigger than what int or long long can store).
+## Author
+Om Bidikar
 
-To achieve this, each digit is stored inside a Doubly Linked List, allowing numbers of unlimited size.
+---
 
-The project supports:
+## About the Project
 
-➕ Addition
+This project implements a Big Integer Calculator that performs arithmetic operations on numbers larger than standard data types like int or long long.
 
-➖ Subtraction
+Each digit is stored in a Doubly Linked List, allowing efficient handling of arbitrarily large integers.
 
-✖ Multiplication
+---
 
-➗ Division
+## Features
 
-Conversion of input digits into linked list
+- Addition
+- Subtraction
+- Multiplication
+- Division
+- Conversion of input digits into linked list
+- Utility functions (insert, compare, free, print)
 
-Utility functions (insert, compare, free, print)
-
-All functions are modular and separated into their own .c files.
+---
 
 ## 📁 Project Structure
 
@@ -46,51 +46,59 @@ Build:
 Documentation:
 - README.md
 
-⚙️ How to Compile
+---
 
-In the terminal, run:
+## ⚙️ How to Compile
 
 make
 
-
-This will create an executable:
-
+This generates:
 calc.out
 
-▶️ How to Run
+---
 
-Use the format:
+## ▶️ How to Run
 
 ./calc.out <num1> <operator> <num2>
 
 Example:
 ./calc.out 12345 + 6789
 
-
 Output:
-
 Result (Addition): 19134
 
-🧪 Examples
-➕ Addition
-./calc.out 98765 + 555
-Result (Addition): 99320
+---
 
-➖ Subtraction
-./calc.out 5000 - 345
-Result (Subtraction): 4655
+## 🧪 Examples
 
-✖ Multiplication
-./calc.out 123 * 456
-Result (Multiplication): 56088
+Addition:
+./calc.out 98765 + 555  
+Result: 99320  
 
-➗ Division
-./calc.out 100 / 5
-Result (Division): 20
+Subtraction:
+./calc.out 5000 - 345  
+Result: 4655  
 
-💡 Key Data Structure: Doubly Linked List
+Multiplication:
+./calc.out 123 * 456  
+Result: 56088  
 
-Example node:
+Division:
+./calc.out 100 / 5  
+Result: 20  
+
+---
+
+## 📸 Output Screenshot
+
+![Addition](screenshots/addition.png)
+![Subtraction](screenshots/subtraction.png)
+![Multiplication](screenshots/multiplication.png)
+![Division](screenshots/division.png)
+
+---
+
+## 💡 Key Data Structure: Doubly Linked List
 
 typedef struct node {
     struct node *prev;
@@ -98,23 +106,35 @@ typedef struct node {
     struct node *next;
 } Dlist;
 
+Each digit of a number is stored as a node in the list.
 
-Each digit of a number is stored as one node in the list.
+---
 
-✨ Features
+## 🧠 Concepts Used
 
-✔ Handles very large numbers
-✔ Memory efficient
-✔ Modular design
-✔ Uses linked lists instead of arrays
-✔ Works like a real big integer calculator
+- Doubly Linked Lists
+- Dynamic Memory Allocation
+- Pointer Manipulation
+- Modular Programming in C
 
-🧹 How to Clean Build Files
+---
+
+## ⚠️ Limitations
+
+- Only integer arithmetic supported
+- No floating-point operations
+- Limited input validation
+
+---
+
+## 🧹 Clean Build
+
 make clean
 
+Removes .o files and executable.
 
-This removes .o files and the executable.
+---
 
-📘 License
+## 📘 License
 
-This project is open-source. You may modify, distribute, or use it for learning.
+This project is open-source and can be used for learning purposes.
