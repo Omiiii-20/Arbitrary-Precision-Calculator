@@ -24,24 +24,27 @@ Utility functions (insert, compare, free, print)
 
 All functions are modular and separated into their own .c files.
 
-📁 Project Structure
-APC_Project/
-│
-├── src/
-│   ├── main.c
-│   ├── addition.c
-│   ├── subtraction.c
-│   ├── multiplication.c
-│   ├── division.c
-│   ├── digit_to_list.c
-│   ├── list_utils.c
-│
-├── include/
-│   ├── apc.h
-│
-├── Makefile
-├── .gitignore
-└── README.md
+## 📁 Project Structure
+
+Apc_projectt/
+
+Source Files:
+- main.c
+- addition.c
+- subtraction.c
+- multiplication.c
+- division.c
+- digit_to_list.c
+- list_utils.c
+
+Header File:
+- apc.h
+
+Build:
+- Makefile
+
+Documentation:
+- README.md
 
 ⚙️ How to Compile
 
