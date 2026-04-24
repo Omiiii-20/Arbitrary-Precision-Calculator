@@ -1,7 +1,3 @@
-// Name : Om Bidikar
-// Date : 14nd Nov 2025
-//Batch : 25017_172
-
 
 #ifndef APC_H
 #define APC_H
